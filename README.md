@@ -49,9 +49,20 @@ Fashion-MNIST contains 70,000 grayscale images across 10 clothing categories.
 - Training Epochs: 5
 
 
-  
 
-##Future Improvements
+
+## Error Analysis
+- The model sometimes misclassified visually similar clothing items.
+- Examples observed :
+  - Shirts were sometimes classified as T-shirts.
+  - A sneaker was classified as a bag
+  - Coats and pullovers were sometimes confused
+- One possible reason is that Fashion-MNIST images are small (28 x 28 pixels), making some clothing details difficult to distinguish.
+
+
+
+
+## Future Improvements
 - Compare different CNN architectures.
 - Tune learning rate and batch size.
 - Analyze class-wise accuracy and a confusion matrix.
